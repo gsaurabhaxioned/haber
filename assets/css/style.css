@@ -96,21 +96,98 @@ li {
   display: inline-block;
   list-style-type: none;
 }
-
+/* section title styling  */
+.headertext {
+  text-align: center;
+  font-size: 43px;
+  font-weight: bold;
+}
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1536px;
+  width: 92.5%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header {
+  background-color: #414C52;
+}
+header .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  padding: 36px 54px 36px 30px;
+  background-color: #DC6226;
+  color: #ffffff;
+}
+.logo h1{
+  font-size: 51px;
+  font-weight: bold;
+  line-height: 39px;
+ }
+ .logo h1::before {
+   content: "\f268";
+   font-family: "fontAwesome";
+   font-size: 46px;
+ }
+.logo span {
+  margin-left: 50px;
+  display: block;
+  font-size: 12px;
+}
+.header-section-menu {
+  padding-top: 56px;
+  flex-basis: 54%;
+  box-sizing: border-box;
+}
+.header-section-menu ul {
+  margin-left: 23px;
+  display: flex;
+  column-gap: 46px;
+}
+.header-section-menu ul li {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header-section-menu ul li a {
+  color: #ffffff;
+}
+.about-submenu li{
+  display: none;
+}
+.icons {
+  padding: 48px 0;
+  flex-basis: 15.5%;
+}
+.icons a {
+  padding-left:18px;
+  text-indent: -9999px;
+}
 
-
-
-
-
+.icons a::before {
+  content: "\f081";
+  float: right;
+  color: #ffffff;
+  font-family: "fontAwesome";
+  font-size: 26px;
+  text-indent: 0;
+}
+.icons a:nth-child(2):before {
+  content: "\f167";
+}
+.icons a:nth-child(3):before {
+  content: "\f09e";
+}
+.icons a:nth-child(4):before {
+  content: "\f082";
+}
+.icons a:nth-child(5):before {
+  content: "\f0d4";
+}
 
 /*=================================
   Header styling ends here
@@ -119,14 +196,146 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-
-
-
-
-
-
-
-
+/* banner stuling here  */
+.slider {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.leftarrow,.rightarrow {
+  font-size: 43px;
+}
+/* banner styling ends  */
+/* our focus styling starts  */
+.our-focus-blogs {
+  display: flex;
+}
+.our-focus-blog {
+  text-align: center;
+}
+.our-focus h2 {
+  padding: 56px 0;
+}
+/* our focus styling ends  */
+/* advice styling starts  */
+.advice {
+  padding: 68px;
+  text-align: center;
+  background-color: #E8EFF2;
+}
+.advice h2 {
+  padding: 30px 0;
+}
+.advice .wrapper p {
+  font-size: 21px;
+  font-weight: bold;
+}
+.advice-photos {
+  margin-top: 60px;
+  display: flex;
+  column-gap: 36px;
+}
+.advice-photos li {
+  padding: 11px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.advice-photo-header {
+  margin-top: 43px;
+  color: #DC6226;
+  font-size: 31px;
+  font-weight: bold;
+}
+.advice .wrapper .advice-photo-content {
+  padding: 12px 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+.advice-photo-link {
+  text-indent: -9999px;
+}
+.advice-photo-link::before {
+  content: "\f18e";
+  margin-top: 2px;
+  float: right;
+  display: block;
+  color: #000000; 
+  font-family: "fontAwesome";
+  font-size: 27px;
+  text-indent: 0;
+}
+/* advice styling ends  */
+/* investment solution styling starts  */
+.investment-solution-blogs {
+  display: flex;
+}
+.investment-solution-blog {
+  background-color: #DC6226;
+}
+.investment-solution-blog:nth-child(2) {
+  background-color: #000000;
+}
+.investment-solution-blog h2{
+  padding: 26px 0;
+  font-size: 38px;
+  font-weight: bold;
+}
+.investment-solution-blog-lists li {
+  width: 55%;
+  margin-bottom: 20px;;
+}
+/* investment solution styling ends  */
+/* quick contact section starts here  */
+.quick-contact {
+  padding-top: 18px;
+}
+.quick-contact .wrapper h2 {
+  padding: 44px 0;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 45px;
+}
+.inputs {
+  flex-basis: 31%;
+}
+.inputs li {
+  width: 100%;
+  margin-bottom: 5%;
+}
+.inputs input[type="text"] {
+  width: 100%;
+  height: 34px;
+}
+label {
+  display: none;
+}
+.textarea {
+  flex-basis: 60%;
+}
+.textarea textarea {
+  width: 100%;
+  padding: 5px 0;
+}
+.contact-info {
+  margin-top: 74px;
+  padding: 155px;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  background-color: #515C62;
+  color: #ffffff;
+  font-size: 21px;
+}
+.contact-contents {
+  flex-basis: 33%;
+}
+.contact-contents a {
+  text-indent: -9999px;
+}
+/* quick contact section ends here  */
 /*=================================
   main styling ends here
 =================================*/
@@ -134,12 +343,6 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
-
 
  /*=================================
   footer styling ends here
