@@ -285,6 +285,10 @@ header .wrapper{
   width: 55%;
   margin-bottom: 20px;;
 }
+.investment-brands {
+  display: flex;
+  align-items: center;
+}
 /* investment solution styling ends  */
 /* quick contact section starts here  */
 .quick-contact {
