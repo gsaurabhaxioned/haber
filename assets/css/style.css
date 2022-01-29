@@ -1,3 +1,5 @@
+
+   
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -128,10 +130,13 @@ header .wrapper{
   background-color: #DC6226;
   color: #ffffff;
 }
-.logo h1{
-  font-size: 51px;
-  font-weight: bold;
-  line-height: 39px;
+ .logo h1 a {
+   margin-left: 5px;
+   font-size: 51px;
+   color: #ffffff;
+   font-weight: bold;
+   line-height: 39px;
+
  }
  .logo h1::before {
    content: "\f268";
@@ -139,7 +144,7 @@ header .wrapper{
    font-size: 46px;
  }
 .logo span {
-  margin-left: 50px;
+  margin-left: 55px;
   display: block;
   font-size: 12px;
 }
@@ -153,17 +158,21 @@ header .wrapper{
   box-sizing: border-box;
 }
 .header-section-menu ul {
-  margin-left: 23px;
+  margin-left: 18px;
   display: flex;
-  column-gap: 46px;
+  column-gap: 44px;
 }
 .header-section-menu ul li {
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 .header-section-menu ul li a {
   color: #ffffff;
+}
+.header-section-menu ul li a:hover {
+  color: #DC6226;
 }
 .about-submenu li{
   display: none;
@@ -207,18 +216,27 @@ header .wrapper{
 =================================*/
 /* banner stuling here  */
 .slider {
-  padding: 21px 0;
+  width: 50%;
+  padding: 20px 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  top: 78%;
+  top: 80.5%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #DC6226;
   color: #ffffff;
 }
+.slider h2 {
+  width: 90%;
+  font-size: 38px;
+}
 .slider-leftarrow,.slider-rightarrow {
-  font-size: 43px;
+  font-size: 60px;
 }
 /* banner styling ends  */
+/* our focus styling starts  */
 /* our focus styling starts  */
 .our-focus {
   padding-top: 42px;
@@ -413,7 +431,7 @@ label {
   color: #ffffff;
 }
 .send-button {
-  margin-left: 95%;
+  margin-left: 91%;
   font-size: 20px;
   font-weight: bold;
 }
@@ -449,16 +467,22 @@ label {
   text-indent: -9999px;
 }
 .contact-contents a::before {
-    content: "\f174";
-    padding: 20px;
+    content: "\f041";
+    padding: 20px 28px;
     float: right;
     border: 9px solid #6D717C;
     border-radius: 100%;
     background: #DC6226;
     color: #ffffff;
     font-family: "fontAwesome";
-    font-size: 46px;
-    text-indent: 0;   
+    font-size: 42px;
+    text-indent: 0;
+}
+.contact-contents:nth-child(2)>a::before {
+  content: "\f0e0";
+}
+.contact-contents:nth-child(3)>a::before {
+  content: "\f095";
 }
 /* quick contact section ends here  */
 /*=================================
@@ -552,7 +576,15 @@ float: right;
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-
+header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,footer .wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info .wrapper {
+  align-items: flex-start;
+}
+.slider,.contact-form {
+  display: none;
+}
 
 }  
