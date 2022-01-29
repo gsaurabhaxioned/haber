@@ -304,6 +304,10 @@ header .wrapper{
   font-size: 27px;
   text-indent: 0;
 }
+.advice-photo {
+  position: relative;
+}
+.advice-photo:hover .overlay {display: block; }
 /* advice styling ends  */
 /* investment solution styling starts  */
 .investment-solution {
@@ -350,6 +354,11 @@ header .wrapper{
 .investment-brands {
   display: flex;
   align-items: center;
+}
+.investment-brands-left-arrow,.investment-brand-right-arrow {
+  color: #000000;
+  font-size: 46px;
+  cursor: pointer;
 }
 /* investment solution styling ends  */
 /* quick contact section starts here  */
@@ -403,8 +412,18 @@ label {
   background-color: transparent;
   color: #ffffff;
 }
+.send-button {
+  margin-left: 95%;
+  font-size: 20px;
+  font-weight: bold;
+}
+.send-button a {
+  padding: 18px 30px;
+  background-color: #DC6226;
+  color: #ffffff;
+}
 .contact-info {
-  padding: 155px;
+  padding: 155px 0;
   color: #ffffff;
   font-size: 21px;
 }
@@ -413,19 +432,33 @@ label {
   align-items: center;
   column-gap: 50px;
 }
+.contact-content-title {
+  font-size: 20px;
+}
+.contact-number {
+  display: block;
+  font-size: 26px;
+}
 .contact-contents {
-  flex-basis: 33%;
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
 }
 .contact-contents a {
   text-indent: -9999px;
 }
 .contact-contents a::before {
-  content: "\f174";
-  float: right;
-  color: #DC6226;
-  font-family: "fontAwesome";
-  font-size: 35px;
-  text-indent: 0;
+    content: "\f174";
+    padding: 20px;
+    float: right;
+    border: 9px solid #6D717C;
+    border-radius: 100%;
+    background: #DC6226;
+    color: #ffffff;
+    font-family: "fontAwesome";
+    font-size: 46px;
+    text-indent: 0;   
 }
 /* quick contact section ends here  */
 /*=================================
@@ -489,6 +522,29 @@ float: right;
 .footer-icons a:nth-child(6):before {
   content: "\f0d4";
 }
+.map {
+  position: relative;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: none; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .5s ease;
+  background-color: #8fd0a5;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.map:hover .overlay {display: block; }
+
  /*=================================
   footer styling ends here
 =================================*/ 
