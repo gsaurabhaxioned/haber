@@ -202,16 +202,23 @@ header .wrapper{
 =================================*/
 /* banner stuling here  */
 .slider {
+  padding: 21px 0;
   position: absolute;
-  top: 80%;
+  top: 72%;
   left: 50%;
   transform: translateX(-50%);
+  background-color: #DC6226;
+  color: #ffffff;
 }
 .leftarrow,.rightarrow {
   font-size: 43px;
 }
 /* banner styling ends  */
 /* our focus styling starts  */
+.our-focus {
+  padding-top: 42px;
+  padding-bottom: 93px;
+}
 .our-focus-blogs {
   display: flex;
 }
@@ -232,7 +239,7 @@ header .wrapper{
   padding: 30px 0;
 }
 .advice .wrapper p {
-  font-size: 21px;
+  font-size: 23px;
   font-weight: bold;
 }
 .advice-photos {
@@ -241,7 +248,7 @@ header .wrapper{
   column-gap: 36px;
 }
 .advice-photos li {
-  padding: 11px;
+  padding: 11px 11px 35px 11px;
   background-color: #ffffff;
   box-sizing: border-box;
 }
@@ -271,11 +278,14 @@ header .wrapper{
 }
 /* advice styling ends  */
 /* investment solution styling starts  */
-.investment-solution-blogs {
+.investment-solution {
   display: flex;
 }
-.investment-solution-blog {
+.investment-solution-blog1 {
   background-color: #DC6226;
+}
+.investment-solution-blog2 {
+  background-color: #404B50;
 }
 .investment-solution-blog:nth-child(2) {
   background-color: #000000;
@@ -297,6 +307,7 @@ header .wrapper{
 /* quick contact section starts here  */
 .quick-contact {
   padding-top: 18px;
+  background-color: #515C62;
 }
 .quick-contact .wrapper h2 {
   padding: 44px 0;
@@ -333,7 +344,6 @@ label {
   display: flex;
   align-items: center;
   column-gap: 50px;
-  background-color: #515C62;
   color: #ffffff;
   font-size: 21px;
 }
@@ -343,6 +353,14 @@ label {
 .contact-contents a {
   text-indent: -9999px;
 }
+.contact-contents a::before {
+  content: "\f174";
+  float: right;
+  color: #DC6226;
+  font-family: "fontAwesome";
+  font-size: 35px;
+  text-indent: 0;
+}
 /* quick contact section ends here  */
 /*=================================
   main styling ends here
@@ -351,18 +369,59 @@ label {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer {
+  padding-top: 4%;
+  padding-bottom:14%;
+  background-color: #404B51;
+}
+footer .wrapper {
+  display: flex;
+}
 footer figure {
 float: right;
 }
 .footer-logo {
-  width: 50%;
+  margin-top: 2%;
+  flex-basis: 50%;
+  color: #ffffff;
 }
-.footer-logo h1 {
+.logo-title {
   font-size: 40px;
 } 
 .copyright {
-  display:block;
   font-size: 15px;
+  color: #ffffff;
+}
+.footer-icons {
+  margin-top: 14px;
+  display: block;
+}
+.footer-icons a {
+  padding-right: 23px;
+  text-indent: -9999px;
+}
+.footer-icons a::before {
+  content: "\f174";
+  float: right;
+  color: #DC6226;
+  font-family: "fontAwesome";
+  font-size: 35px;
+  text-indent: 0;
+}
+.footer-icons a:nth-child(2):before {
+  content: "\f081";
+}
+.footer-icons a:nth-child(3):before {
+  content: "\f167";
+}
+.footer-icons a:nth-child(4):before {
+  content: "\f1eb";
+}
+.footer-icons a:nth-child(5):before {
+  content: "\f082";
+}
+.footer-icons a:nth-child(6):before {
+  content: "\f0d4";
 }
  /*=================================
   footer styling ends here
