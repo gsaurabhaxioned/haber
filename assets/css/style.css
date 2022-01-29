@@ -138,6 +138,10 @@ header .wrapper{
   display: block;
   font-size: 12px;
 }
+.hamburger,.cross {
+  text-indent: -9999px;
+  display: none;
+}
 .header-section-menu {
   padding-top: 56px;
   flex-basis: 54%;
@@ -347,7 +351,19 @@ label {
 /*=================================
   footer styling starts here
 =================================*/ 
-
+footer figure {
+float: right;
+}
+.footer-logo {
+  width: 50%;
+}
+.footer-logo h1 {
+  font-size: 40px;
+} 
+.copyright {
+  display:block;
+  font-size: 15px;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
