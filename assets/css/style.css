@@ -96,6 +96,11 @@ li {
   display: inline-block;
   list-style-type: none;
 }
+/* font styling  */
+.font-faint {
+  opacity: 0.6;
+  font-weight: bold;
+}
 /* section title styling  */
 .headertext {
   text-align: center;
@@ -204,13 +209,13 @@ header .wrapper{
 .slider {
   padding: 21px 0;
   position: absolute;
-  top: 72%;
+  top: 78%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #DC6226;
   color: #ffffff;
 }
-.leftarrow,.rightarrow {
+.slider-leftarrow,.slider-rightarrow {
   font-size: 43px;
 }
 /* banner styling ends  */
@@ -221,12 +226,35 @@ header .wrapper{
 }
 .our-focus-blogs {
   display: flex;
+  justify-content: space-between;
+  column-gap: 77px;
 }
 .our-focus-blog {
   text-align: center;
 }
+.our-focus-blog figure {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  padding-bottom: 28px;  
+}
 .our-focus h2 {
   padding: 56px 0;
+}
+.our-focus-blog-header {
+  width: 55%;
+  margin: auto;
+  display: block;
+  font-size: 21px;
+  font-weight: bold;
+}
+.our-focus-blog-content {
+  margin-top: 27px;
+}
+.our-focus-blog-link {
+  padding: 14px;
+  margin-top: 28px;
+  border: 1px solid #000000;
 }
 /* our focus styling ends  */
 /* advice styling starts  */
@@ -279,10 +307,22 @@ header .wrapper{
 /* advice styling ends  */
 /* investment solution styling starts  */
 .investment-solution {
+  color: #ffffff;
+}
+.investment-solution-blogs {
   display: flex;
 }
-.investment-solution-blog1 {
+.investment-solution-blogs h2 {
+  font-size: 37px;
+  font-weight: bold;
+}
+.investment-solution-blog1,.investment-solution-blog2 {
+  padding: 58px;
   background-color: #DC6226;
+}
+.investment-solution-blog-lists {
+  margin-top: 30px;
+  font-size: 21px;
 }
 .investment-solution-blog2 {
   background-color: #404B50;
@@ -290,10 +330,18 @@ header .wrapper{
 .investment-solution-blog:nth-child(2) {
   background-color: #000000;
 }
-.investment-solution-blog h2{
-  padding: 26px 0;
+.investment-solution-blogs h2{
   font-size: 38px;
   font-weight: bold;
+}
+.investment-solution-blogs a {
+  margin-top: 22px;
+  padding: 15px;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 17px;
+  text-decoration: none;
 }
 .investment-solution-blog-lists li {
   width: 55%;
@@ -307,10 +355,17 @@ header .wrapper{
 /* quick contact section starts here  */
 .quick-contact {
   padding-top: 18px;
+  position: relative;
   background-color: #515C62;
 }
 .quick-contact .wrapper h2 {
-  padding: 44px 0;
+  padding: 42px 0;
+}
+.contact-form .wrapper{
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 form {
   display: flex;
@@ -327,25 +382,36 @@ form {
 .inputs input[type="text"] {
   width: 100%;
   height: 34px;
+  padding-left: 14px;
+  background-color: transparent;
+}
+.inputs input[type="text"]::placeholder {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.5;
 }
 label {
   display: none;
 }
 .textarea {
-  flex-basis: 60%;
+  flex-basis: 65%;
 }
 .textarea textarea {
   width: 100%;
   padding: 5px 0;
+  background-color: transparent;
+  color: #ffffff;
 }
 .contact-info {
-  margin-top: 74px;
   padding: 155px;
-  display: flex;
-  align-items: center;
-  column-gap: 50px;
   color: #ffffff;
   font-size: 21px;
+}
+.contact-info .wrapper {
+   display: flex;
+  align-items: center;
+  column-gap: 50px;
 }
 .contact-contents {
   flex-basis: 33%;
