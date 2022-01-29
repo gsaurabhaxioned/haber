@@ -71,11 +71,13 @@
         <img src="assets/pics/1519x558.png" alt="Banner">
       </figure>
       <div class="wrapper">
-        <h2 class="slider headertext">
-          <a href="#FIXME" class="slider-leftarrow" title="Slide To Left">&lt;</a>
+        <div class="slider">
+        <span class="slider-leftarrow">&lt;</span>
+        <h2 class="headertext"></h2>
            MEET YOUR FINANTIAL INVESTMENT NEEDS
-          <a href="#FIXME" class="slider-rightarrow" title="Slide To Right">&gt;</a>
           </h2>
+          <span class="slider-rightarrow">&gt;</span> 
+        </div>
        </div>
     </div>
     <!-- banner section ends  -->
@@ -137,9 +139,16 @@
         </p>
         <ul class="advice-photos">
           <li>
+            <div class="advice-photo">
             <figure>
               <img src="assets/pics/419x240.png" alt="Advice Photo">
             </figure>
+            <div class="overlay">
+              <div class="content">
+                <h2 class="advice-photo-capital">Aut Preferendis</h2>
+            </div>
+          </div>
+          </div>
             <h3 class="advice-photo-header">Aut Preferendis</h3>
             <p class="advice-photo-content font-faint">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam accusantium officia beatae odit placeat harum 
@@ -148,10 +157,17 @@
             <a class="advice-photo-link" href="#FIXME" title="Advice Photo Link" target="_blank">click for more</a>
           </li>
           <li>
+            <div class="advice-photo">
             <figure>
               <img src="assets/pics/419x240.png" alt="Advice Photo">
             </figure>
-            <h3 class="advice-photo-header">Aut Preferendis</h3>
+            <div class="overlay">
+              <div class="content">
+                <h2 class="advice-photo-capital">Laoreetum</h2>
+            </div>
+          </div>
+          </div>
+            <h3 class="advice-photo-header">Laoreetum</h3>
             <p class="advice-photo-content font-faint">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam accusantium officia beatae odit placeat harum 
                 vel maiores quos necessitatibus?
@@ -159,9 +175,16 @@
             <a class="advice-photo-link" href="#FIXME" title="Advice Photo Link" target="_blank">click for more</a>
           </li>
           <li>
+            <div class="advice-photo">
             <figure>
               <img src="assets/pics/419x240.png" alt="Advice Photo">
             </figure>
+            <div class="overlay">
+              <div class="content">
+                <h2 class="advice-photo-capital">Laoreetum</h2>
+            </div>
+          </div>
+          </div>
             <h3 class="advice-photo-header">Aut Preferendis</h3>
             <p class="advice-photo-content font-faint">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam accusantium officia beatae odit placeat harum 
@@ -199,14 +222,14 @@
         </div>
            <div class="wrapper">
             <div class="investment-brands">
-              <a class="investment-brands-left-arrow">&lt;</a>
+              <span class="investment-brands-left-arrow">&lt;</span>
               <figure><img src="assets/pics/235x200.png" alt="Investment Brand"></figure>
               <figure><img src="assets/pics/235x200.png" alt="Investment Brand"></figure>
               <figure><img src="assets/pics/235x200.png" alt="Investment Brand"></figure>
               <figure><img src="assets/pics/235x200.png" alt="Investment Brand"></figure>
               <figure><img src="assets/pics/235x200.png" alt="Investment Brand"></figure>
               <figure><img src="assets/pics/235x200.png" alt="Investment Brand"></figure>
-              <a class="investment-brand-right-arrow">&gt;</a>
+              <span class="investment-brand-right-arrow">&gt;</span>
             </div>
           </div>
       </section>
@@ -244,7 +267,7 @@
             <label for="message">name</label>
              <textarea id="message" cols="30" rows="10"></textarea>
            </div>
-           <div>
+           <div class="send-button">
            <a href="#FORME" title="Send Form" target="_blank">SEND</a>
           </div>
           </form>
@@ -255,18 +278,18 @@
             <div class="wrapper">
             <div class="contact-contents">
               <a href="#FIXME" title="Location" target="_blank">address</a>
-              NEW YORK 9870 ST VINCENT GLASGOW
+              <p class="contact-content-title"> NEW YORK 9870 ST VINCENT GLASGOW</p>
             </div>
             <div class="contact-contents">
               <a href="#FIXME" title="Email" target="_blank">email</a>
-              CONTACT@DEMOLINK.ORG
+              <p class="contact-content-title">CONTACT@DEMOLINK.ORG</p>
             </div>
             <div class="contact-contents">
               <a href="#FIXME" title="Call Us" target="_blank">call</a>
-              CALL US:
+              <p class="contact-content-title">CALL US:
               <span class="contact-number">
                 &#43;1 800 603 6035
-              </span>
+              </span></p>
             </div>
           </div>
         </div>
@@ -279,7 +302,7 @@
     <footer>      
       <div class="wrapper">
         <div class="footer-logo">
-          <span class="logo-title">HABER</span>
+          <h1 class="logo-title">HABER</h1>
           <span class="copyright">&copy; 2018 Privacy Policy</span>
           <span class="footer-icons">
             <a href="#FIXME" title="Tumblr" target="_blank">tumblr</a>
@@ -290,9 +313,21 @@
             <a href="#FIXME" title="Google" target="_blank">google</a>
           </span>
         </div>
-        <figure class="map">
+        <div class="map">
+        <figure>
             <img src="assets/pics/689x243.png" alt="Map">
         </figure>
+        <div class="overlay">
+          <div class="content">
+            <h2 class="capital">Google Map</h2>
+            <span>track from here/span>
+            <div class="find_search">
+              <a href="#FIXME" title="Search" target="_blank">search</a>
+              <a href="#FIXME" title="File" target="_blank">file</a>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </footer>
     <!--footer section end-->
