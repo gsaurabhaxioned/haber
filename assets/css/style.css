@@ -93,6 +93,10 @@ a {
   display: inline-block;
   text-decoration: none; 
 }
+a:hover {
+  transform: scale(1.2);
+  transition: transform 1s ease-in-out;
+}
 
 li {
   display: inline-block;
@@ -148,9 +152,22 @@ header .wrapper{
   display: block;
   font-size: 12px;
 }
-.hamburger,.cross {
-  text-indent: -9999px;
+.hamburger,
+.cross {
+  padding-top: 20px;
   display: none;
+  text-indent: -9999px;
+}
+.hamburger::before,
+.cross::before {
+  content: "\f0c9";
+  color: #ffffff;
+  font-family: "fontAwesome";
+  float: right;
+  text-indent: -257px;
+}
+.cross::before {
+  content: "\f00d";
 }
 .header-section-menu {
   padding-top: 56px;
@@ -574,17 +591,99 @@ float: right;
 =================================*/ 
 
 /*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,footer .wrapper {
-  flex-direction: column;
-  align-items: center;
-}
-.contact-info .wrapper {
-  align-items: flex-start;
-}
-.slider,.contact-form {
-  display: none;
+@media only screen and (max-width: 1440px) {
+  .slider {
+    top: 70%;
+  }
+  header .wrapper,.our-focus-blogs {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .contact-form figure {
+    height: 80vh;
+  }
+  .contact-form figure img {
+    height: 100%;
+  }
+  .send-button {
+    margin-left: 0;
+  }
 }
 
-}  
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,.contact-contents,footer .wrapper {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,footer .wrapper,.contact-contents {
+  row-gap: 20px;
+}
+.header-section-menu ul{
+  row-gap: 10px;
+}
+.contact-info .wrapper {
+  align-items: center;
+}
+.slider {
+  padding-top: 0;
+  top: 47.5%;
+}
+.slider h2 {
+  font-size: 14px;
+}
+.contact-form figure {
+  height: 50vh;
+}
+.contact-form figure img {
+  height: 100%;
+}
+
+}
+@media only screen and (max-width:768px) {
+  .headertext {
+    font-size: 33px;
+  }
+  .header-section-menu {
+    padding-top: 16px;
+  }
+  .header-section-menu ul {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .icons {
+    padding: 0;
+  }
+  .banner figure {
+    height: 50vh;
+  }
+  .banner figure img {
+    height: 100%;
+  }
+  .slider {
+    top: 50%;
+  }
+  .slider-leftarrow,.slider-rightarrow {
+    font-size: 14px;
+  }
+  .contact-form figure {
+    height: 70vh;
+  }
+  .investment-solution-blog-lists li {
+    width: 100%;
+  }
+  .footer-icons a::before {
+    font-size: 34px;
+  }
+}
+@media only screen and (max-width:480px) {
+  .slider {
+    top: 43%;
+  }
+  .contact-form figure {
+    height: 85vh;
+  }
+}
