@@ -116,7 +116,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1536px;
-  width: 92.5%; 
+  width: 95%; 
   margin: 0 auto;
 }
 /*=================================
@@ -130,7 +130,8 @@ header .wrapper{
   justify-content: space-between;
 }
 .logo {
-  padding: 36px 54px 36px 30px;
+  padding: 36px 50px 36px 30px;
+  margin-left: 19px;
   background-color: #DC6226;
   color: #ffffff;
 }
@@ -153,6 +154,7 @@ header .wrapper{
   display: block;
   color: #D9C6CC;
   font-size: 12px;
+  font-weight: bold;
 }
 .hamburger,
 .cross {
@@ -163,10 +165,10 @@ header .wrapper{
 .hamburger::before,
 .cross::before {
   content: "\f0c9";
+  text-indent: -257px;
   color: #ffffff;
   font-family: "fontAwesome";
   float: right;
-  text-indent: -257px;
 }
 .cross::before {
   content: "\f00d";
@@ -177,7 +179,7 @@ header .wrapper{
   box-sizing: border-box;
 }
 .header-section-menu ul {
-  margin-left: 18px;
+  margin-left: 29px;
   display: flex;
   column-gap: 44px;
 }
@@ -205,7 +207,7 @@ header .wrapper{
 }
 .icons {
   padding: 48px 0;
-  flex-basis: 15.5%;
+  flex-basis: 16.2%;
   opacity: 0.4;
 }
 .icons a {
@@ -248,12 +250,12 @@ header .wrapper{
 .slider {
   width: 50%;
   padding: 20px 39px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   top: 77%;
   left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   transform: translateX(-50%);
   background-color: #DC6226;
   color: #ffffff;
@@ -274,6 +276,8 @@ header .wrapper{
   padding-bottom: 93px;
 }
 .our-focus-blogs {
+  width: 94%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   column-gap: 77px;
@@ -284,8 +288,8 @@ header .wrapper{
 .our-focus-blog figure {
   width: 50px;
   height: 50px;
-  margin: auto;
   padding-bottom: 28px;  
+  margin: auto;
 }
 .our-focus h2 {
   padding: 56px 0;
@@ -304,11 +308,14 @@ header .wrapper{
   padding: 14px;
   margin-top: 28px;
   border: 1px solid #000000;
+  color: #000000;
+  font-weight: bold;
+  opacity: 0.7;
 }
 /* our focus styling ends  */
 /* advice styling starts  */
 .advice {
-  padding: 68px;
+  padding: 66px 20px;
   text-align: center;
   background-color: #E8EFF2;
 }
@@ -320,6 +327,7 @@ header .wrapper{
   font-weight: bold;
 }
 .advice-photos {
+  width: 100%;
   margin-top: 60px;
   display: flex;
   column-gap: 36px;
@@ -350,12 +358,12 @@ header .wrapper{
   content: "\f18e";
   margin-top: 2px;
   float: right;
+  text-indent: 0;
   display: block;
   color: #000000; 
   font-family: "fontAwesome";
   font-size: 27px;
-  text-indent: 0;
-}
+  }
 .advice-photo {
   position: relative;
 }
@@ -373,7 +381,7 @@ header .wrapper{
   font-weight: bold;
 }
 .investment-solution-blog1,.investment-solution-blog2 {
-  padding: 56px;
+  padding: 52px 56px;
   background-color: #DC6226;
 }
 .investment-solution-blog-lists {
@@ -391,17 +399,20 @@ header .wrapper{
   font-weight: bold;
 }
 .investment-solution-blogs a {
+  padding: 15px 18px;
   margin-top: 22px;
-  padding: 15px;
   border: 3px solid #ffffff;
   display: inline-block;
   color: #ffffff;
   font-size: 17px;
+  font-weight: bold;
   text-decoration: none;
+  opacity: 0.8;
 }
 .investment-solution-blog-lists li {
-  width: 55%;
+  width: 65%;
   margin-bottom: 20px;
+  opacity: 0.7;
   line-height: 41px;
 }
 .investment-solution-blog-lists li::before {
@@ -410,6 +421,12 @@ header .wrapper{
   color: #ffffff;
   font-family: "fontAwesome";
   font-size: 15px;
+  opacity: 1;
+}
+.investment-solution-blogs p {
+  margin-bottom: 30px;
+  font-size: 21px;
+  opacity: 0.7;
 }
 .investment-brands {
   display: flex;
@@ -428,19 +445,20 @@ header .wrapper{
 }
 .quick-contact .wrapper h2 {
   padding: 42px 0;
-  color: #ffffff;
   -webkit-text-stroke: 1px #000000;
+  color: #ffffff;
 }
 .contact-form {
   position: relative;
 }
 .contact-form .wrapper{
   position: absolute;
-  top: 55px;
+  top: 37px;
   left: 50%;
   transform: translateX(-50%);
 }
 form {
+  padding: 0 17px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 45px;
@@ -488,7 +506,7 @@ label {
   color: #ffffff;
 }
 .contact-info {
-  padding: 155px 0;
+  padding: 115px 20px;
   color: #ffffff;
   font-size: 21px;
 }
@@ -514,25 +532,25 @@ label {
   align-items: center;
   column-gap: 18px;
 }
-.contact-icon {
+.contact-icon1,.contact-icon2,.contact-icon3 {
   text-indent: -9999px;
 }
-.contact-icon::before {
+.contact-icon1::before,.contact-icon2::before,.contact-icon3::before {
     content: "\f041";
     padding: 20px 28px;
     float: right;
+    text-indent: 0;
     border: 9px solid #6D717C;
     border-radius: 100%;
     background: #DC6226;
     color: #ffffff;
     font-family: "fontAwesome";
     font-size: 42px;
-    text-indent: 0;
 }
-.contact-icon:nth-child(2)>a::before {
+.contact-icon2::before {
   content: "\f0e0";
 }
-.contact-icon:nth-child(3)>a::before {
+.contact-icon3::before {
   content: "\f095";
 }
 /* quick contact section ends here  */
@@ -555,7 +573,7 @@ footer figure {
 float: right;
 }
 .footer-logo {
-  margin-top: 2%;
+  margin: 32px 17px;
   flex-basis: 50%;
   color: #ffffff;
 }
@@ -581,10 +599,10 @@ float: right;
 .footer-icons a::before {
   content: "\f174";
   float: right;
+  text-indent: 0;
   color: #DC6226;
   font-family: "fontAwesome";
   font-size: 35px;
-  text-indent: 0;
 }
 .footer-icons a:nth-child(2):before {
   content: "\f081";
@@ -602,17 +620,19 @@ float: right;
   content: "\f0d4";
 }
 .map {
+  margin-right: 31px;
   position: relative;
 }
 .overlay {
   width: 100%;
   height: 100%;
-  display: none; 
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  text-align: center;
+  display: none; 
   transition: .5s ease;
   background-color: #8fd0a5;
 }
@@ -637,9 +657,9 @@ float: right;
 /*media query starts*/
 @media only screen and (max-width: 1440px) {
   .slider {
-    top: 70%;
+    top: 30%;
   }
-  header .wrapper,.our-focus-blogs {
+  header .wrapper,.our-focus-blogs,.investment-solution-blogs {
     flex-direction: column;
     row-gap: 20px;
   }
@@ -663,12 +683,12 @@ float: right;
 }
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,.contact-contents,footer .wrapper {
-  flex-direction: column;
+.our-focus-blogs,.advice-photos,.contact-info .wrapper,.contact-contents,footer .wrapper {
   align-items: center;
   text-align: center;
-}
-.header-section-menu ul,.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,footer .wrapper,.contact-contents {
+  flex-direction: column;
+  }
+.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,footer .wrapper,.contact-contents {
   row-gap: 20px;
 }
 .header-section-menu ul li {
@@ -679,16 +699,19 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
 .contact-info .wrapper {
   align-items: center;
 }
-.slider {
-  padding-top: 0;
-  top: 47.5%;
-}
 .slider h2 {
   font-size: 14px;
 }
-
 }
 @media only screen and (max-width:768px) {
+  header .wrapper,.header-section-menu ul {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .header-section-menu ul {
+    row-gap: 20px;
+  }
   .headertext {
     font-size: 33px;
   }
@@ -708,9 +731,6 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
   .banner figure img {
     height: 100%;
   }
-  .slider {
-    top: 50%;
-  }
   .slider-leftarrow,.slider-rightarrow {
     font-size: 14px;
   }
@@ -719,10 +739,5 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
   }
   .footer-icons a::before {
     font-size: 34px;
-  }
-}
-@media only screen and (max-width:480px) {
-  .slider {
-    top: 43%;
   }
 }
