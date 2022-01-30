@@ -500,6 +500,10 @@ label {
 .contact-content-title {
   font-size: 20px;
 }
+.contact-content-title a {
+  transform: scale(1);
+  color: #ffffff;
+}
 .contact-number {
   display: block;
   font-size: 26px;
@@ -510,10 +514,10 @@ label {
   align-items: center;
   column-gap: 18px;
 }
-.contact-contents a {
+.contact-icon {
   text-indent: -9999px;
 }
-.contact-contents a::before {
+.contact-icon::before {
     content: "\f041";
     padding: 20px 28px;
     float: right;
@@ -525,10 +529,10 @@ label {
     font-size: 42px;
     text-indent: 0;
 }
-.contact-contents:nth-child(2)>a::before {
+.contact-icon:nth-child(2)>a::before {
   content: "\f0e0";
 }
-.contact-contents:nth-child(3)>a::before {
+.contact-icon:nth-child(3)>a::before {
   content: "\f095";
 }
 /* quick contact section ends here  */
@@ -559,6 +563,9 @@ float: right;
   display: inline-block;
   font-size: 40px;
 } 
+.logo-title a {
+  color: #ffffff;
+}
 .copyright {
   font-size: 15px;
   color: #ffffff;
@@ -586,7 +593,7 @@ float: right;
   content: "\f167";
 }
 .footer-icons a:nth-child(4):before {
-  content: "\f1eb";
+  content: "\f09e";
 }
 .footer-icons a:nth-child(5):before {
   content: "\f082";
@@ -634,8 +641,6 @@ float: right;
   }
   header .wrapper,.our-focus-blogs {
     flex-direction: column;
-  }
-  .our-focus-blogs {
     row-gap: 20px;
   }
   .contact-form .wrapper {
@@ -663,11 +668,13 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
   align-items: center;
   text-align: center;
 }
-.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,footer .wrapper,.contact-contents {
+.header-section-menu ul,.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,footer .wrapper,.contact-contents {
   row-gap: 20px;
 }
-.header-section-menu ul{
-  row-gap: 10px;
+.header-section-menu ul li {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
 }
 .contact-info .wrapper {
   align-items: center;
@@ -687,8 +694,6 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
   }
   .header-section-menu {
     padding-top: 16px;
-  }
-  .header-section-menu ul {
     display: none;
   }
   .hamburger {
