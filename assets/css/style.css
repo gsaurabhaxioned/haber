@@ -110,7 +110,7 @@ li {
 /* section title styling  */
 .headertext {
   text-align: center;
-  font-size: 43px;
+  font-size: 41px;
   font-weight: bold;
 }
 /*for wrapper*/
@@ -136,8 +136,9 @@ header .wrapper{
 }
  .logo h1 a {
    margin-left: 5px;
-   font-size: 51px;
+   transform: scale(1);
    color: #ffffff;
+   font-size: 51px;
    font-weight: bold;
    line-height: 39px;
 
@@ -148,8 +149,9 @@ header .wrapper{
    font-size: 46px;
  }
 .logo span {
-  margin-left: 55px;
+  margin-left: 53px;
   display: block;
+  color: #D9C6CC;
   font-size: 12px;
 }
 .hamburger,
@@ -185,10 +187,17 @@ header .wrapper{
   font-weight: bold;
   letter-spacing: 1px;
 }
+.header-section-menu ul li:nth-child(2):hover::after {
+  content: "\f078";
+  display: block;
+  color: #DC6226;
+  font-family: "fontAwesome";
+}
 .header-section-menu ul li a {
   color: #ffffff;
 }
 .header-section-menu ul li a:hover {
+  transform: scale(1);
   color: #DC6226;
 }
 .about-submenu li{
@@ -197,9 +206,10 @@ header .wrapper{
 .icons {
   padding: 48px 0;
   flex-basis: 15.5%;
+  opacity: 0.4;
 }
 .icons a {
-  padding-left:18px;
+  padding-left:16.4px;
   text-indent: -9999px;
 }
 
@@ -208,7 +218,7 @@ header .wrapper{
   float: right;
   color: #ffffff;
   font-family: "fontAwesome";
-  font-size: 26px;
+  font-size: 28px;
   text-indent: 0;
 }
 .icons a:nth-child(2):before {
@@ -232,6 +242,9 @@ header .wrapper{
   main styling starts here
 =================================*/
 /* banner stuling here  */
+.banner {
+  position: relative;
+}
 .slider {
   width: 50%;
   padding: 20px 39px;
@@ -239,7 +252,7 @@ header .wrapper{
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 80.5%;
+  top: 77%;
   left: 50%;
   transform: translateX(-50%);
   background-color: #DC6226;
@@ -251,6 +264,7 @@ header .wrapper{
 }
 .slider-leftarrow,.slider-rightarrow {
   font-size: 60px;
+  cursor: pointer;
 }
 /* banner styling ends  */
 /* our focus styling starts  */
@@ -321,6 +335,9 @@ header .wrapper{
   font-size: 31px;
   font-weight: bold;
 }
+.advice-photo-capital {
+  font-size: 38px;
+}
 .advice .wrapper .advice-photo-content {
   padding: 12px 0;
   font-weight: normal;
@@ -356,7 +373,7 @@ header .wrapper{
   font-weight: bold;
 }
 .investment-solution-blog1,.investment-solution-blog2 {
-  padding: 58px;
+  padding: 56px;
   background-color: #DC6226;
 }
 .investment-solution-blog-lists {
@@ -384,7 +401,15 @@ header .wrapper{
 }
 .investment-solution-blog-lists li {
   width: 55%;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
+  line-height: 41px;
+}
+.investment-solution-blog-lists li::before {
+  content: "\f013";
+  margin-right: 25px;
+  color: #ffffff;
+  font-family: "fontAwesome";
+  font-size: 15px;
 }
 .investment-brands {
   display: flex;
@@ -399,11 +424,15 @@ header .wrapper{
 /* quick contact section starts here  */
 .quick-contact {
   padding-top: 18px;
-  position: relative;
   background-color: #515C62;
 }
 .quick-contact .wrapper h2 {
   padding: 42px 0;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #000000;
+}
+.contact-form {
+  position: relative;
 }
 .contact-form .wrapper{
   position: absolute;
@@ -421,15 +450,16 @@ form {
 }
 .inputs li {
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 .inputs input[type="text"] {
   width: 100%;
   height: 34px;
   padding-left: 14px;
+  border: 1px solid #ffffff;
   background-color: transparent;
 }
-.inputs input[type="text"]::placeholder {
+.inputs input[type="text"]::placeholder,.textarea textarea {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
@@ -444,16 +474,16 @@ label {
 .textarea textarea {
   width: 100%;
   padding: 5px 0;
+  border: 1px solid #ffffff;
   background-color: transparent;
-  color: #ffffff;
 }
 .send-button {
-  margin-left: 91%;
+  margin:1%  91.1%;
   font-size: 20px;
   font-weight: bold;
 }
 .send-button a {
-  padding: 18px 30px;
+  padding: 16px 30px;
   background-color: #DC6226;
   color: #ffffff;
 }
@@ -465,7 +495,7 @@ label {
 .contact-info .wrapper {
    display: flex;
   align-items: center;
-  column-gap: 50px;
+  column-gap: 57px;
 }
 .contact-content-title {
   font-size: 20px;
@@ -526,6 +556,7 @@ float: right;
   color: #ffffff;
 }
 .logo-title {
+  display: inline-block;
   font-size: 40px;
 } 
 .copyright {
@@ -578,11 +609,17 @@ float: right;
   transition: .5s ease;
   background-color: #8fd0a5;
 }
+.capital {
+  font-size: 40px;
+}
 .content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.content span {
+  font-size: 30px;
 }
 .map:hover .overlay {display: block; }
 
@@ -597,10 +634,15 @@ float: right;
   }
   header .wrapper,.our-focus-blogs {
     flex-direction: column;
+  }
+  .our-focus-blogs {
     row-gap: 20px;
   }
+  .contact-form .wrapper {
+    top: 0;
+  }
   .contact-form figure {
-    height: 80vh;
+    height: 70vh;
   }
   .contact-form figure img {
     height: 100%;
@@ -609,7 +651,11 @@ float: right;
     margin-left: 0;
   }
 }
-
+@media only screen and (max-width: 1024px){
+  .contact-form figure {
+    height: 100vh;
+  }
+}
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investment-solution-blogs,.contact-info .wrapper,.contact-contents,footer .wrapper {
@@ -632,12 +678,6 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
 }
 .slider h2 {
   font-size: 14px;
-}
-.contact-form figure {
-  height: 50vh;
-}
-.contact-form figure img {
-  height: 100%;
 }
 
 }
@@ -669,9 +709,6 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
   .slider-leftarrow,.slider-rightarrow {
     font-size: 14px;
   }
-  .contact-form figure {
-    height: 70vh;
-  }
   .investment-solution-blog-lists li {
     width: 100%;
   }
@@ -682,8 +719,5 @@ header .wrapper,.header-section-menu ul,.our-focus-blogs,.advice-photos,.investm
 @media only screen and (max-width:480px) {
   .slider {
     top: 43%;
-  }
-  .contact-form figure {
-    height: 85vh;
   }
 }
